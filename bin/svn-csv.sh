@@ -23,4 +23,4 @@ rm tmp.xml
 
 sed -i -e "s/^/${PROJECT_ID},/" tmp.csv
 
-cat tmp.csv
+mv tmp.csv "${CSV_FILE}"

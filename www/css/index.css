@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.indexCol {
+	display: inline-block;
+}
+
+.projectCol {
+	display: inline-block;
+}
+
+.authorCol {
+	display: inline-block;
+}
+
+.dateCol {
+	display: inline-block;
+}
+
+.timeCol {
+	display: inline-block;
+}

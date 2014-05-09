@@ -15,4 +15,4 @@ CSV_FILE="${3}"
 [ -e "${GIT_DIR}" ] || die "The working copy ${WORKING_COPY} is not a valid GIT repository"
 
 cd "${WORKING_COPY}"
-git log --pretty=format:"${PROJECT_ID},%ae,%ai"
+git log --pretty=format:"${PROJECT_ID},%ae,%ai" > "${CSV_FILE}"
