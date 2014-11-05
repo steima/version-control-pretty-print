@@ -17,6 +17,7 @@ BINDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 [ -e "${SVN_DIR}" ] || die "The working copy ${WORKING_COPY} is not a valid SVN repository"
 
 cd "${WORKING_COPY}"
+svn update
 svn log --xml > tmp.xml
 xmlsh "${BINDIR}/svn-xml-csv.xsh"
 rm tmp.xml
